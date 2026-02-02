@@ -405,15 +405,15 @@ const MechanicAssistPage = () => {
       </section>
 
       {/* Before & After Visual Comparison - NEW SECTION */}
-      <section style={{ background: '#fff', padding: '96px 0' }}>
+      <section className="py-16 md:py-24" style={{ background: '#fff' }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-16">
             
             {/* LEFT: The Old Way - Struggling */}
-            <div style={{
+            <div className="md:!p-12 h-full" style={{
               background: 'linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)',
               borderRadius: '16px',
-              padding: '48px 40px',
+              padding: '32px 24px',
               border: '1px solid rgba(220,38,38,0.2)',
               position: 'relative',
               overflow: 'hidden'
@@ -439,8 +439,9 @@ const MechanicAssistPage = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginBottom: '32px',
-                marginTop: '24px'
+                marginBottom: '40px',
+                marginTop: '24px',
+                minHeight: '280px'
               }}>
                 {/* Stack of manuals illustration */}
                 <div style={{ position: 'relative', width: '200px', height: '180px' }}>
@@ -541,7 +542,8 @@ const MechanicAssistPage = () => {
                 fontSize: '22px',
                 fontWeight: 700,
                 color: '#991b1b',
-                marginBottom: '12px',
+                marginBottom: '20px',
+                marginTop: '0',
                 textAlign: 'center'
               }}>
                 Hours of Manual Searching
@@ -551,7 +553,8 @@ const MechanicAssistPage = () => {
                 color: '#7f1d1d',
                 lineHeight: 1.8,
                 listStyle: 'none',
-                padding: 0
+                padding: 0,
+                margin: 0
               }}>
                 <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'start', gap: '8px' }}>
                   <span>❌</span>
@@ -573,10 +576,10 @@ const MechanicAssistPage = () => {
             </div>
 
             {/* RIGHT: The New Way - AI Powered */}
-            <div style={{
+            <div className="md:!p-12 h-full" style={{
               background: 'linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%)',
               borderRadius: '16px',
-              padding: '48px 40px',
+              padding: '32px 24px',
               border: '1px solid rgba(22,163,74,0.2)',
               position: 'relative',
               overflow: 'hidden'
@@ -602,67 +605,76 @@ const MechanicAssistPage = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginBottom: '32px',
-                marginTop: '24px'
+                marginBottom: '40px',
+                marginTop: '24px',
+                minHeight: '280px'
               }}>
-                {/* Clean search interface */}
-                <div style={{
-                  width: '220px',
-                  background: '#fff',
-                  borderRadius: '12px',
-                  padding: '24px',
-                  boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
-                  border: '1px solid rgba(22,163,74,0.2)'
-                }}>
-                  {/* Search icon */}
+                {/* Container with search interface and emoji - matching red box structure */}
+                <div style={{ position: 'relative', width: '220px', height: '280px' }}>
+                  {/* Clean search interface */}
                   <div style={{
-                    fontSize: '48px',
-                    textAlign: 'center',
-                    marginBottom: '16px'
+                    position: 'absolute',
+                    bottom: '60px',
+                    left: '0',
+                    width: '220px',
+                    background: '#fff',
+                    borderRadius: '12px',
+                    padding: '24px',
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
+                    border: '1px solid rgba(22,163,74,0.2)'
                   }}>
-                    🔍
-                  </div>
-                  {/* Fake input */}
-                  <div style={{
-                    background: '#f5f5f5',
-                    borderRadius: '8px',
-                    padding: '10px 12px',
-                    fontSize: '11px',
-                    color: '#666',
-                    marginBottom: '12px',
-                    fontFamily: 'monospace'
-                  }}>
-                    Torque spec for...
-                  </div>
-                  {/* Instant result indicator */}
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    justifyContent: 'center'
-                  }}>
+                    {/* Search icon */}
                     <div style={{
-                      width: '6px',
-                      height: '6px',
-                      borderRadius: '50%',
-                      background: '#16a34a',
-                      animation: 'pulse 2s ease-in-out infinite'
-                    }} />
-                    <span style={{
-                      fontSize: '10px',
-                      color: '#16a34a',
-                      fontWeight: 600
+                      fontSize: '48px',
+                      textAlign: 'center',
+                      marginBottom: '16px'
                     }}>
-                      Answer in 2 seconds
-                    </span>
+                      🔍
+                    </div>
+                    {/* Fake input */}
+                    <div style={{
+                      background: '#f5f5f5',
+                      borderRadius: '8px',
+                      padding: '10px 12px',
+                      fontSize: '11px',
+                      color: '#666',
+                      marginBottom: '12px',
+                      fontFamily: 'monospace'
+                    }}>
+                      Torque spec for...
+                    </div>
+                    {/* Instant result indicator */}
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      justifyContent: 'center'
+                    }}>
+                      <div style={{
+                        width: '6px',
+                        height: '6px',
+                        borderRadius: '50%',
+                        background: '#16a34a',
+                        animation: 'pulse 2s ease-in-out infinite'
+                      }} />
+                      <span style={{
+                        fontSize: '10px',
+                        color: '#16a34a',
+                        fontWeight: 600
+                      }}>
+                        Answer in 2 seconds
+                      </span>
+                    </div>
                   </div>
-                </div>
-                {/* Happy emoji */}
-                <div style={{
-                  fontSize: '48px',
-                  marginTop: '16px'
-                }}>
-                  😊
+                  {/* Happy emoji - positioned like the frustrated emoji */}
+                  <div style={{
+                    position: 'absolute',
+                    top: '0',
+                    right: '20px',
+                    fontSize: '48px'
+                  }}>
+                    😊
+                  </div>
                 </div>
               </div>
 
@@ -670,7 +682,8 @@ const MechanicAssistPage = () => {
                 fontSize: '22px',
                 fontWeight: 700,
                 color: '#15803d',
-                marginBottom: '12px',
+                marginBottom: '20px',
+                marginTop: '0',
                 textAlign: 'center'
               }}>
                 Instant AI-Powered Answers
@@ -680,7 +693,8 @@ const MechanicAssistPage = () => {
                 color: '#166534',
                 lineHeight: 1.8,
                 listStyle: 'none',
-                padding: 0
+                padding: 0,
+                margin: 0
               }}>
                 <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'start', gap: '8px' }}>
                   <span>✅</span>

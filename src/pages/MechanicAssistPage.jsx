@@ -95,7 +95,7 @@ const MechanicAssistPage = () => {
 
   const steps = [
     { number: '01', title: 'Upload Your Manuals', description: 'Add your existing service manuals, technical bulletins, and documentation. Works with PDFs and standard formats.' },
-    { number: '02', title: 'AI Processes Everything', description: 'Our AI reads, understands, and indexes your documentation — learning the technical language specific to automotive service.' },
+    { number: '02', title: 'AI Processes Everything', description: 'Our AI reads, understands, and indexes your documentation and learning the technical language specific to automotive service.' },
     { number: '03', title: 'Ask Questions Naturally', description: 'Technicians type or speak questions in plain language. Get instant, accurate answers with source references.' }
   ];
 

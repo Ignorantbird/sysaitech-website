@@ -88,7 +88,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full overflow-hidden" style={{ minHeight: '100vh', backgroundColor: '#f5f5f7' }}>
+    <section className="relative w-full overflow-hidden" style={{ minHeight: 'calc(100vh - 80px)', backgroundColor: '#f5f5f7', paddingTop: '80px' }}>
       {/* Animated particles canvas */}
       <canvas
         ref={canvasRef}
@@ -249,8 +249,8 @@ const HeroSection = () => {
       </div>
 
       {/* Content — original sysaitech copy, untouched */}
-      <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', padding: '0 24px' }}>
-        <div style={{ maxWidth: '860px', textAlign: 'center', marginTop: '-60px' }}>
+      <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: 'calc(100vh - 80px)', padding: '0 24px' }}>
+        <div style={{ maxWidth: '860px', textAlign: 'center',  }}>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
             Custom AI Solutions & Growth Marketing for Forward-Thinking Businesses

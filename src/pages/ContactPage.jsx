@@ -239,7 +239,7 @@ const ContactPage = () => {
                 lineHeight: 1.7,
                 maxWidth: '480px'
               }}>
-                Whether you need a custom AI solution, want to scale your marketing, or have a product idea you're ready to build—we're here to help.
+                Whether you need a custom AI solution, want to scale your marketing, or have a product idea you're ready to build, we're here to help.
               </p>
             </div>
 

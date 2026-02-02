@@ -401,7 +401,7 @@ const AboutPage = () => {
                 color: '#fff',
                 maxWidth: '420px'
               }}>
-                We build what we believe in — and we ship it.
+                We build what we believe in and we ship it.
               </h2>
             </div>
 
@@ -410,7 +410,7 @@ const AboutPage = () => {
                 sysaitech was founded with a simple belief: AI and intelligent technology should drive real business outcomes, not just impressive demos.
               </p>
               <p style={{ fontSize: '15px', color: 'rgba(255,255,255,0.45)', lineHeight: 1.8 }}>
-                We're a team of engineers, marketers, and business strategists who got tired of seeing companies invest in technology that doesn't move the needle. So we built sysaitech to bridge that gap — combining deep technical expertise with a laser focus on growth and results.
+                We're a team of engineers, marketers, and business strategists who got tired of seeing companies invest in technology that doesn't move the needle. So we built sysaitech to bridge that gap, combining deep technical expertise with a laser focus on growth and results.
               </p>
               <p style={{ fontSize: '15px', color: 'rgba(255,255,255,0.45)', lineHeight: 1.8 }}>
                 We don't just consult. We build. Mechanic Assist, our AI product for automotive service centers, is proof that we practice what we preach.
@@ -458,7 +458,7 @@ const AboutPage = () => {
                 Approach
               </p>
               <p style={{ fontSize: '15px', color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}>
-                Technology without strategy is just expensive toys. Strategy without execution is just talk. We do both — and we do them well.
+                Technology without strategy is just expensive toys. Strategy without execution is just talk. We do both and we do them well.
               </p>
             </div>
           </div>

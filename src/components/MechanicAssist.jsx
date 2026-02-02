@@ -9,8 +9,8 @@ const MechanicAssist = () => {
         background: 'linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.1) 80%, transparent 100%)'
       }} />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8" style={{ padding: '96px 0' }}>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 !py-16 md:!py-24">
+        <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
 
           {/* Left — Content */}
           <div>
@@ -136,7 +136,7 @@ const MechanicAssist = () => {
           </div>
 
           {/* Right — 3D Floating Chat Mockup */}
-          <div style={{ 
+          <div className="hidden md:block" style={{ 
             position: 'relative',
             perspective: '1200px'
           }}>
@@ -262,6 +262,58 @@ const MechanicAssist = () => {
               </div>
             </div>
           </div>
+          <div className="md:hidden" style={{
+          background: 'linear-gradient(135deg, rgba(99,102,241,0.05) 0%, rgba(168,85,247,0.05) 100%)',
+          borderRadius: '16px',
+          padding: '32px 24px',
+          border: '1px solid rgba(0,0,0,0.08)',
+          textAlign: 'center'
+        }}>
+          <div style={{
+            fontSize: '64px',
+            marginBottom: '16px'
+          }}>
+            🔍
+          </div>
+          <h3 style={{
+            fontSize: '18px',
+            fontWeight: 600,
+            color: '#111',
+            marginBottom: '12px'
+          }}>
+            Ask. Get Answers. Fast.
+          </h3>
+          <p style={{
+            fontSize: '14px',
+            color: 'rgba(0,0,0,0.6)',
+            lineHeight: 1.6,
+            marginBottom: '20px'
+          }}>
+            Natural language search through all your service manuals
+          </p>
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            padding: '8px 16px',
+            background: 'rgba(22,163,74,0.1)',
+            borderRadius: '999px'
+          }}>
+            <div style={{
+              width: '8px',
+              height: '8px',
+              borderRadius: '50%',
+              background: '#16a34a'
+            }} />
+            <span style={{
+              fontSize: '13px',
+              color: '#16a34a',
+              fontWeight: 600
+            }}>
+              Answer in 2 seconds ⚡
+            </span>
+          </div>
+        </div>
         </div>
       </div>
 

@@ -10,8 +10,8 @@ const FinalCTA = () => {
         background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.15) 20%, rgba(255,255,255,0.15) 80%, transparent 100%)'
       }} />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8" style={{ padding: '96px 0' }}>
-        <div className="flex flex-col md:flex-row md:items-end justify-between" style={{ gap: '48px' }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 !py-16 md:!py-24">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-12">
           {/* Left — headline + sub */}
           <div style={{ maxWidth: '520px' }}>
             <p className="font-semibold" style={{
@@ -40,9 +40,10 @@ const FinalCTA = () => {
           </div>
 
           {/* Right — CTA + email */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '16px' }}>
+          <div className="items-center md:items-start" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <Link
               to="/contact"
+              className="w-full md:w-auto justify-center"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',

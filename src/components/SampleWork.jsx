@@ -7,8 +7,9 @@ const ProjectRow = ({ project, index }) => {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="!py-6 md:!py-8"
       style={{
-        padding: '32px 0',
+        padding: '24px 0',
         cursor: 'pointer',
         background: hovered ? 'rgba(0,0,0,0.015)' : 'transparent',
         transition: 'background 0.2s ease'
@@ -178,9 +179,9 @@ const SampleWork = () => {
         zIndex: 1
       }} />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8" style={{ padding: '96px 0', position: 'relative', zIndex: 1 }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 !py-16 md:!py-24" style={{ position: 'relative', zIndex: 1 }}>
         {/* Header */}
-        <div style={{ marginBottom: '64px' }}>
+        <div style={{ marginBottom: '40px' }} className="md:!mb-16">
           <p className="font-semibold" style={{
             fontSize: '11px',
             letterSpacing: '0.14em',

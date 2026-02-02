@@ -3,7 +3,7 @@ import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import MechanicAssist from '../components/MechanicAssist';
 import WhySysAITech from '../components/WhySysAITech';
-import StatsSection from '../components/Statssection';
+import StatsSection from '../components/StatsSection';
 import SampleWork from '../components/SampleWork';
 import FinalCTA from '../components/FinalCTA';
 import ScrollToTop from '../components/Scrolltotop';
